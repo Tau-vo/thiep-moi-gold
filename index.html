@@ -1,154 +1,132 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thiệp Mời Sinh Nhật Gold</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiệp Mời Bé Gold - Tường Ảnh</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: "Segoe UI", sans-serif;
-      background: #fff8f1;
-      color: #333;
-      line-height: 1.6;
+      background: url('assets/images/7E2ADFC9-34C3-4166-A3DA-029C9A042F2E.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
-    header {
-      background: #fff0d9;
-      text-align: center;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 40px 20px;
+      min-height: 100vh;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.2em;
-      color: #d97706;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    #countdown {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-top: 20px;
-      color: #e11d48;
-    }
-    section.invitation {
+    h1 {
       text-align: center;
-      padding: 30px 20px;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      color: gold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
     }
-    .invitation p {
-      margin: 10px 0;
-      font-size: 1.1em;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
       gap: 10px;
-      padding: 20px;
-      background-color: #fffdf8;
+      max-width: 1200px;
+      margin: auto;
     }
-    .gallery img {
-      max-width: 300px;
+    .grid img {
       width: 100%;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
     }
-    footer {
+    .grid img:hover {
+      transform: scale(1.05);
+    }
+  
+    .welcome-banner {
       text-align: center;
-      padding: 30px 20px;
-      background: #fff0d9;
-      font-style: italic;
-    }
-    
-    section.map {
-      padding: 30px 20px;
-      background: #fffdf8;
-      text-align: center;
-    }
-    .map h2 {
-      color: #d97706;
-      margin-bottom: 20px;
-    }
-    .map-container {
+      padding: 40px 20px;
+      background-color: #fff7ebd9;
+      border-radius: 12px;
       max-width: 800px;
-      margin: auto;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin: 30px auto;
+      color: #5b341b;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    .welcome-banner h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      color: #d97706;
+    }
+    .welcome-banner h2 {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+    .welcome-banner ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1em;
+    }
+    .welcome-banner li {
+      margin: 8px 0;
     }
 
-  </style>
+</style>
 </head>
 <body>
-  <header>
-    <h1>🎂 Mời Dự Tiệc Sinh Nhật Bé Gold 🎉</h1>
-    <p>Võ Hiểu Minh tròn 1 tuổi!</p>
-    <div id="countdown">Đang tải thời gian...</div>
-  </header>
-  <section class="invitation">
-    <p>Con kính mời Ông/Bà/Cô/Chú đến chung vui cùng gia đình con!</p>
-    <p><strong>⏰ Thời gian:</strong> 11h00, Thứ Bảy - 12/07/2025</p>
-    <p><strong>📍 Địa điểm:</strong> Nhà Hàng Dìn Ký Cộng Hòa</p>
-    <p>142/18 Cộng Hòa, Phường 4, Tân Bình, TP.HCM</p>
-  </section>
-  <section class="gallery">
-    <img src="assets/images/09083EB2-1D49-4C16-908D-5C7F3589B828.jpeg" alt="Ảnh bé Gold">
-    <img src="assets/images/EB225AB3-7BD6-43F3-8F75-43788C31C199.jpeg" alt="Ảnh bé Gold">
-    <img src="assets/images/3C4F7A17-D37C-42C6-A277-2543FB57EBE6.jpeg" alt="Ảnh bé Gold">
-    <img src="assets/images/5EF53DDD-06E3-4401-836A-826C06FF088B.jpeg" alt="Ảnh bé Gold">
-    <img src="assets/images/182543B6-CE88-454F-8F83-7CAAE2317421.jpeg" alt="Ảnh bé Gold">
-    <img src="assets/images/FD8FB18E-5842-49DA-84D3-84A3BDF42BAF.jpeg" alt="Ảnh bé Gold">
-    <img src="assets/images/5C2A4D92-23BA-4AC3-B1FD-3858B160138B.jpeg" alt="Ảnh bé Gold">
-    <img src="assets/images/BE893876-3AEE-4940-A18F-0170D36D7BB6.jpeg" alt="Ảnh bé Gold">
-    <img src="assets/images/7E2ADFC9-34C3-4166-A3DA-029C9A042F2E.jpeg" alt="Ảnh bé Gold">
-    <img src="assets/images/664B508A-2375-4257-92BA-318D16C6CCF8.jpeg" alt="Ảnh bé Gold">
+  <div class="overlay">
 
-  <section class="map">
-    <h2>📍 Bản đồ chỉ đường</h2>
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.231290575605!2d106.64836247590563!3d10.793682689354665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec1cb51f1b3%3A0x215b15ec49e3e07b!2zTmjDoCBIw6BuZyDEkGnhu4FuIEPGoW5nIEjhu5Np!5e0!3m2!1svi!2s!4v1720250000000!5m2!1svi!2s" 
-        width="100%" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+<section class="welcome-banner">
+  <h1>🎂 Mời Dự Tiệc Sinh Nhật Bé Gold 🎉</h1>
+  <p>Võ Hiểu Minh tròn 1 tuổi!</p>
+  <h2 id="countdown" style="color:deeppink;"></h2>
+  <p>Con kính mời Ông/Bà/Cô/Chú đến chung vui cùng gia đình con!</p>
+  <ul>
+    <li>🕰️ <strong>Thời gian:</strong> 11h00, Thứ Bảy - 12/07/2025</li>
+    <li>📍 <strong>Địa điểm:</strong> Nhà Hàng Dìn Ký Cộng Hòa<br>
+      142/18 Cộng Hòa, Phường 4, Tân Bình, TP.HCM</li>
+  </ul>
+</section>
+
+    <h1>📸 Khoảnh Khắc Của Bé Gold</h1>
+    <div class="grid">
+      <img src="assets/images/09083EB2-1D49-4C16-908D-5C7F3589B828.jpeg" alt="Ảnh bé Gold">
+      <img src="assets/images/EB225AB3-7BD6-43F3-8F75-43788C31C199.jpeg" alt="Ảnh bé Gold">
+      <img src="assets/images/3C4F7A17-D37C-42C6-A277-2543FB57EBE6.jpeg" alt="Ảnh bé Gold">
+      <img src="assets/images/5EF53DDD-06E3-4401-836A-826C06FF088B.jpeg" alt="Ảnh bé Gold">
+      <img src="assets/images/182543B6-CE88-454F-8F83-7CAAE2317421.jpeg" alt="Ảnh bé Gold">
+      <img src="assets/images/FD8FB18E-5842-49DA-84D3-84A3BDF42BAF.jpeg" alt="Ảnh bé Gold">
+      <img src="assets/images/5C2A4D92-23BA-4AC3-B1FD-3858B160138B.jpeg" alt="Ảnh bé Gold">
+      <img src="assets/images/BE893876-3AEE-4940-A18F-0170D36D7BB6.jpeg" alt="Ảnh bé Gold">
+      <img src="assets/images/664B508A-2375-4257-92BA-318D16C6CCF8.jpeg" alt="Ảnh bé Gold">
+      <img src="assets/images/EB225AB3-7BD6-43F3-8F75-43788C31C199.jpeg" alt="Ảnh bé Gold">
+      <img src="assets/images/3C4F7A17-D37C-42C6-A277-2543FB57EBE6.jpeg" alt="Ảnh bé Gold">
+      <img src="assets/images/09083EB2-1D49-4C16-908D-5C7F3589B828.jpeg" alt="Ảnh bé Gold">
+
     </div>
-  </section>
+  </div>
 
-  <footer>
-    Rất mong sự hiện diện của quý vị để ngày vui của con thêm trọn vẹn! 💛
-  </footer>
-  
 <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Jul 12, 2025 11:00:00").getTime();
+  const eventTime = new Date("2025-07-12T11:00:00+07:00").getTime();
+  const countdownEl = document.getElementById("countdown");
 
-  // Update the count down every 1 second
-  var x = setInterval(function () {
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = eventTime - now;
 
-    // Time calculations
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Display result
-    document.getElementById("countdown").innerHTML =
-      days + " ngày " + hours + " giờ " + minutes + " phút " + seconds + " giây ";
-
-    // If countdown finished
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("countdown").innerHTML = "Đã đến giờ tiệc rồi!";
+    if (distance <= 0) {
+      countdownEl.innerHTML = "🎉 Đã đến giờ tổ chức tiệc!";
+      return;
     }
-  }, 1000);
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownEl.innerHTML = `${days} ngày ${hours} giờ ${minutes} phút ${seconds} giây`;
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
 </script>
 
 </body>
